@@ -5,9 +5,9 @@ const app = express();
 app.use(express.static(__dirname + "/dist"));
 
 // Only for single page websites
-app.get(/.*/, function(req, res){
-    res.sendfile(__dirname + "/dist/index.html");
-});
+// app.get(/.*/, function(req, res){
+//     res.sendfile(__dirname + "/dist/index.html");
+// });
 
 app.listen(port);
 
