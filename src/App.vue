@@ -4,8 +4,8 @@
       <nav class="container mx-auto px-8 flex flex-wrap justify-between items-center py-8">
         <div class="mb-0 lg:mb-6 xl:mb-0">
           <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
-            <img src="@/assets/logo.png" alt="logo" class="w-10">
-            <span>ue.js</span>
+            <img src="@/assets/SemilandLOGO.jpg" alt="logo" class="w-10">
+            <!-- <span>Semiland</span> -->
           </router-link>
         </div>
         <div class="block lg:hidden">
@@ -20,15 +20,25 @@
           <li class="mr-12 mb-6 lg:mb-0">
             <!-- <search-component /> -->
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <mega-menu />
+          </li> -->
+          <li class="mr-8 mb-6 lg:mb-0">
+            <router-link :to="`/${$i18n.locale}/home`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.home')}}</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <router-link :to="`/${$i18n.locale}/about`" class="text-copy-primary hover:text-gray-600">About</router-link>
+            <router-link :to="`/${$i18n.locale}/services`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.services') }}</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <router-link :to="`/${$i18n.locale}/contact`" class="text-copy-primary hover:text-gray-600">Contact</router-link>
+            <router-link :to="`/${$i18n.locale}/career`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.career') }}</router-link>
           </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <router-link :to="`/${$i18n.locale}/contact`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.contact') }}</router-link>
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <router-link :to="`/${$i18n.locale}/blog`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.blog') }}</router-link>
+          </li>
+          
           <li class="mr-8 mb-6 lg:mb-0">
             <modal-login />
           </li>

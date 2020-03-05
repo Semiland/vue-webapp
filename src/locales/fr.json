@@ -1,7 +1,11 @@
 {
   "message": "bonjour i18n !!",
   "nav": {
-    "features": "frFeatures"
+    "home": "frHome",
+    "services": "frServices",
+    "career": "frCareer",
+    "contact": "frContact",
+    "blog": "frBlog"
   },
   "about": {
     "title": "frAbout",

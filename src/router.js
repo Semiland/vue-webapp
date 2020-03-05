@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+// import Home from './views/Home.vue'
 import i18n from './i18n'
 
 Vue.use(Router)
@@ -19,23 +19,35 @@ export default new Router({
         render (c) { return c('router-view') }
       },
       children: [
+        // {
+        //   path: '/',
+        //   name: 'home',
+        //   component: Home
+        // },
         {
-          path: '/',
+          path: 'home',
           name: 'home',
-          component: Home
+          component: () => import(/* webpackChunkName: "contact" */ './views/Home.vue')
         },
         {
-          path: 'about',
-          name: 'about',
-          // route level code-splitting
-          // this generates a separate chunk (about.[hash].js) for this route
-          // which is lazy-loaded when the route is visited.
-          component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+          path: 'services',
+          name: 'services',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Services.vue')
+        },
+        {
+          path: 'career',
+          name: 'career',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Career.vue')
         },
         {
           path: 'contact',
           name: 'contact',
           component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue')
+        },
+        {
+          path: 'blog',
+          name: 'blog',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog.vue')
         }
       ]
     }
