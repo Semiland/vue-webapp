@@ -31,3 +31,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Deploy to Heroku
 npm run build
+
+git add .
+
+git commit -m "initial commit"
+
+git push heroku master
+

@@ -18,7 +18,7 @@
           :class="menuOpen ? 'block': 'hidden'"
         >
           <li class="mr-12 mb-6 lg:mb-0">
-            <search-component />
+            <!-- <search-component /> -->
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <mega-menu />
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import SearchComponent from '@/components/SearchComponent.vue'
+// import SearchComponent from '@/components/SearchComponent.vue'
 import DropdownMenu from '@/components/DropdownMenu.vue'
 import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 import MegaMenu from '@/components/MegaMenu.vue'
@@ -61,7 +61,7 @@ import ModalRegister from '@/components/ModalRegister.vue'
 export default {
   name: 'app',
   components: {
-    SearchComponent,
+    // SearchComponent,
     DropdownMenu,
     MegaMenu,
     ModalLogin,
