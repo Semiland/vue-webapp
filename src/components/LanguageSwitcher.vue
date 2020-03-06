@@ -58,7 +58,7 @@
             @keydown.tab.exact="hideDropdown"
             @keydown.esc.exact="hideDropdown"
           >
-            <img src="/ru.svg" alt="russian flag" class="h-8 w-8">
+            <img src="/flag_ru.svg" alt="russian flag" class="h-8 w-8">
             <span class="ml-2">Russian</span>
           </a>
         </li>

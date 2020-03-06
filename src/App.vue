@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="font-sans text-gray-800">
     <header class="border-t-4 border-blue-700 bg-white z-10 absolute w-full shadow-md">
-      <nav class="container mx-auto px-8 flex flex-wrap justify-between items-center py-8">
+      <nav class="container mx-auto px-2 flex flex-wrap justify-between items-center py-1">
         <div class="mb-0 lg:mb-6 xl:mb-0">
           <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
-            <img src="@/assets/SemilandLOGO.jpg" alt="logo" class="w-10">
+            <img src="@/assets/SemilandLOGO.jpg" alt="logo" class="w-16">
             <!-- <span>Semiland</span> -->
           </router-link>
         </div>
@@ -64,7 +64,7 @@
 // import SearchComponent from '@/components/SearchComponent.vue'
 import DropdownMenu from '@/components/DropdownMenu.vue'
 import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
-import MegaMenu from '@/components/MegaMenu.vue'
+// import MegaMenu from '@/components/MegaMenu.vue'
 import ModalLogin from '@/components/ModalLogin.vue'
 import ModalRegister from '@/components/ModalRegister.vue'
 
@@ -73,7 +73,7 @@ export default {
   components: {
     // SearchComponent,
     DropdownMenu,
-    MegaMenu,
+    // MegaMenu,
     ModalLogin,
     ModalRegister,
     LanguageSwitcher,
