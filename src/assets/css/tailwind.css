@@ -8,4 +8,176 @@
   overflow-y: auto !important;
 }
 
+/* Home Slider */
+.border-box-semi{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+.slider-wrapper{
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.bg-grey-blue{
+  background-color: #f1f5f5;
+}
+
+.bg-grey-black{
+  background-color: #e3edf7;
+}
+
+.latest-news {
+  box-shadow: 2px 2px 5px 0 #163040;
+  transition: all .3s ease;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bg-grey-card{
+  background-color: #f0f2f9;
+}
+
+.bg-grey-card:hover{
+  background-color: #e2e5ec;
+}
+
+.imf-slide{
+  width: 30rem;
+  height: auto;
+} 
+
+.slider{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.slide .content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+.appl-servic{
+  background: url('../symbols/charging.jpg') no-repeat center top/cover;
+  width: 100%;
+}
+
+/* Background images */
+.slide:first-child {
+  background: url('../home/shutterstock_1223230327.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('../home/china_train_010517.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('../home/Renewable-Energy.jpg') no-repeat
+    center top/cover;
+}
+
 

@@ -2,7 +2,7 @@
   <div id="app" class="font-sans text-gray-800">
     <header class="border-t-4 border-blue-700 bg-white z-10 absolute w-full shadow-md">
       <nav class="container mx-auto px-2 flex flex-wrap justify-between items-center py-1">
-        <div class="mb-0 lg:mb-6 xl:mb-0">
+        <div class="mb-0 lg:mb-6 xl:mb-0 pt-0"> 
           <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
             <img src="@/assets/SemilandLOGO.jpg" alt="logo" class="w-16">
             <!-- <span>Semiland</span> -->
@@ -17,7 +17,7 @@
           class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="menuOpen ? 'block': 'hidden'"
         >
-          <li class="mr-12 mb-6 lg:mb-0">
+          <li class="mr-12 mb-6 lg:mb-0 pt-10">
             <!-- <search-component /> -->
           </li>
           <!-- <li class="mr-8 mb-6 lg:mb-0">
@@ -54,9 +54,10 @@
         </ul>
       </nav>
     </header>
-    <div class="bg-gray-100 min-h-screen pt-40 text-lg">
+    <div class="bg-gray-100 min-h-screen pt-20 text-lg">
       <router-view/>
     </div>
+    
   </div>
 </template>
 
@@ -76,7 +77,7 @@ export default {
     // MegaMenu,
     ModalLogin,
     ModalRegister,
-    LanguageSwitcher,
+    LanguageSwitcher
   },
   data() {
     return {
@@ -93,4 +94,4 @@ export default {
 
 <style src="@/assets/css/tailwind.css" />
 
-
+ 

@@ -1,111 +1,134 @@
 <template>
   <div>
-    <div class="container mx-auto px-8 lg:px-48">
-      <div class="pb-16">
-        <p>{{ $t('message') }}</p>
-        <div class="mb-4 text-2xl font-bold">This is a title</div>
-        <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
+    <Slider/>
+
+    
+
+    <div class="container mx-auto px-9 lg:px-69 ">
+
+      <!-- <div class="mx-auto pt-2 pb-10 md:flex md:justify-center items-end border-b-4 border-gray-600">
       </div>
-      <div class="pb-16">
-        <div class="mb-4 text-2xl font-bold">This is a title</div>
-        <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
-      </div>
-      <div class="pb-16">
-        <div class="mb-4 text-2xl font-bold">This is a title</div>
-        <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
+       -->
+       <div class="line"></div>
+      <div class="text-2xl mb-4 md:mb-1 font-bold flex justify-center items-center mb-3">APPLICATION AREA</div>
+      <div class="mx-auto py-12 md:flex md:justify-between md:flex-wrap">
+      <div class="w-48 bg-grey-card rounded-lg shadow-md px-6 py-4 cursor-pointer mb-8 hover:bg-green-200 focus:outline-green focus:shadow-outline-green">
+      
+        <div class="flex justify-center items-center mb-3 ">
+          <h1 class="uppercase text-base tracking-wide text-gray-700 font-bold my-2">EV/HV</h1>
+        </div>
+          <img src='./evhev.jpg'/>
       </div>
 
-      <div class="mx-auto pt-8 pb-6 md:flex md:justify-between items-end border-b-2 border-gray-300">
-        <div class="text-2xl mb-4 md:mb-0">Change Plan</div>
-        <div>
-          <a href="#" class="no-underline hover:underline">Cancel your plan</a>
+      <div class="w-48 bg-grey-card rounded-lg shadow-md px-6 py-4 cursor-pointer mb-8 hover:bg-green-200 focus:outline-none focus:shadow-outline-green">
+      
+        <div class="flex justify-center items-center mb-3">
+          <h1 class="uppercase text-base tracking-wide text-gray-700 font-bold my-2">CHARGING</h1>
+        </div>
+          <img src='./charging.jpg'/>
+      </div>
+
+      <div class="w-48 bg-grey-card rounded-lg shadow-md px-6 py-4 cursor-pointer mb-8 hover:bg-green-200 focus:outline-none focus:shadow-outline-green">
+      
+        <div class="flex justify-center items-center mb-3">
+          <h1 class="uppercase text-base tracking-wide text-gray-700 font-bold my-2">WELDING</h1>
+        </div>
+          <img src='./welding.jpg'/>
+      </div>
+
+      <div class="w-48 bg-grey-card rounded-lg shadow-md px-6 py-4 cursor-pointer mb-8 hover:bg-green-200 focus:outline-none focus:shadow-outline-green">
+      
+        <div class="flex justify-center items-center mb-3">
+          <h1 class="uppercase text-base tracking-wide text-gray-700 font-bold my-2">MV-INT</h1>
+        </div>
+          <img src='./mvint.jpg'/>
+      </div>
+
+      <div class="w-48 bg-grey-card rounded-lg shadow-md px-6 py-4 cursor-pointer mb-8 hover:bg-green-200 focus:outline-none focus:shadow-outline-green">
+      
+        <div class="flex justify-center items-center mb-3">
+          <h1 class="uppercase text-base tracking-wide text-gray-700 font-bold my-2">LV-INV</h1>
+        </div>
+          <img src='./lvint.jpg'/>
+      </div>
+
+      <div class="w-48 bg-grey-card rounded-lg shadow-md px-6 py-4 cursor-pointer mb-8 focus:outline-none focus:shadow-outline-green">
+      
+        <div class="flex justify-center items-center mb-3">
+          <h1 class="uppercase text-base tracking-wide text-gray-700 font-bold my-2">SERVO</h1>
+        </div>
+          <img src='./servo.jpg'/>
+      </div>
+    </div>
+
+      <!-- <div class="mx-auto pt-12 pb-10 md:flex md:justify-center items-end border-b-4 border-gray-600">
+      </div>
+       -->
+    </div>
+
+       <div class="bg-grey-blue">
+       <div class="py-20 container mx-auto px-9 lg:px-69">
+      <div class="text-2xl mb-4 md:mb-1 font-bold flex justify-center items-center mb-3">ABOUT US</div>
+      <div class="max-w-sm w-full lg:max-w-full lg:flex latest-news">
+      <div class="h-48 lg:h-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+        <img class="imf-slide" src='./ingineer-working.jpg'/>
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-6 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-3">Established in 2018</div>
+          <p class="text-gray-700 text-base">Semiland Semiland Co., Ltd, headquartered in Yangzhong, China, is devoted to designing and developing high density power electronics modules using the advanced wide bandgap semiconductor devices to unleash their performance to the maximum extreme.</p>
+        </div>
+        <div class="flex items-center">
+        
+          <div class="text-small">
+            <h2 class="text-gray-800">Semiland</h2>
+          </div>
         </div>
       </div>
-      <div class="mx-auto py-8 md:flex md:justify-between md:flex-wrap">
-        <selectable-plan
-          plan-name="Hobby"
-          plan-gigs="1"
-          plan-dollars="5"
-          v-model="activePlan"
-        ></selectable-plan>
-        <selectable-plan
-          plan-name="Growth"
-          plan-gigs="5"
-          plan-dollars="10"
-          v-model="activePlan"
-        ></selectable-plan>
-        
-        
-      </div>
+</div>
 
-      <div>
-        <md-card>
-    <md-card-actions>
-      <div class="md-subhead">
-        <span>Nested Swipers</span>
-        <span>（</span>
-        <span>Swipers 嵌套</span>
-        <span>）</span>
-      </div>
-      <md-button class="md-icon-button"
-                 target="_blank"
-                 href="https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/18-nested.vue">
-        <md-icon>code</md-icon>
-      </md-button>
-    </md-card-actions>
-    <md-card-media>
-      <!-- swiper -->
-      <swiper :options="swiperOptionh">
-        <swiper-slide>Horizontal Slide 1</swiper-slide>
-        <swiper-slide>
-          <swiper :options="swiperOptionv">
-            <swiper-slide>Vertical Slide 1</swiper-slide>
-            <swiper-slide>Vertical Slide 2</swiper-slide>
-            <swiper-slide>Vertical Slide 3</swiper-slide>
-            <swiper-slide>Vertical Slide 4</swiper-slide>
-            <swiper-slide>Vertical Slide 5</swiper-slide>
-            <div class="swiper-pagination swiper-pagination-v" slot="pagination"></div>
-          </swiper>
-        </swiper-slide>
-        <swiper-slide>Horizontal Slide 1</swiper-slide>
-        <swiper-slide>Horizontal Slide 2</swiper-slide>
-        <swiper-slide>Horizontal Slide 3</swiper-slide>
-        <swiper-slide>Horizontal Slide 4</swiper-slide>
-        <div class="swiper-pagination swiper-pagination-h" slot="pagination"></div>
-      </swiper>
-    </md-card-media>
-  </md-card>
+
+      <!-- <div class="pb-16 py-12">
+        <div class="mb-4 text-2xl font-bold">This is a title</div>
+        <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
+      </div> -->
+      <div class="pb-16">
+        <div class="mb-4 text-2xl font-bold">Semiland's Main Business</div>
+        <p>A high-value application area is needed to settle a new device technology in the beginning stage of the high cost SiC transistors. Beside military and harsh-environmental applications, renewable energy systems are the most promising industrial application with high growth rates. The application of SiC power semiconductor devices in a PV energy system can help eliminate several issues which are at present due to the material limitations of silicon, and the need for a highly efficient and reliable power conversion system in wind turbines were also matched with the material properties of SiC.The unipolar nature of SiC MOSFET favors the development of high switching frequency power converters thereby reducing the size, weight and cost of system while maintaining superio performance as compared to its silicon IGBT counterpart.</p>
+      </div> 
+
       </div>
     </div>
 
-  <div>
-    
+    <div>
   </div>
-
-    <div class="container mx-auto mt-10 pb-12">
-      <pricing-table></pricing-table>
-      <div class="mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsa, veniam similique in obcaecati quam sunt laboriosam? Provident sunt a suscipit iure, corporis nemo doloremque nihil earum iste dolor. Sapiente voluptates, eveniet corrupti iste et obcaecati! Aspernatur quia adipisci, facere enim nam architecto perferendis iusto similique natus, fuga dolorem. Ut earum corporis, illo officiis fuga iusto neque debitis rerum obcaecati velit sed qui quam? Aut maiores fugit, voluptatibus et numquam perferendis tempore totam, voluptatem magni similique aspernatur? Ut, molestias. Sunt sint nihil cum reprehenderit harum? Exercitationem distinctio minus eum quidem reprehenderit recusandae architecto, inventore eligendi perspiciatis asperiores tempora velit nam animi error illo porro nemo dolorum dolore ab, veritatis saepe hic eius, ea modi! Distinctio soluta, excepturi accusantium dicta magnam quo saepe tenetur neque deleniti officiis vero ad iure non necessitatibus recusandae consequatur reiciendis quas numquam. Tempora reiciendis minima quia ducimus dolores repudiandae nesciunt exercitationem tempore beatae eos amet obcaecati ut sequi facere quibusdam ipsum porro, excepturi assumenda deserunt delectus magni quasi, officiis corrupti vel. Labore saepe voluptates tempora quaerat aperiam, in consectetur dolorum? Quaerat aliquam mollitia odio quasi ducimus, libero explicabo perferendis illum ipsam. Reiciendis, eaque voluptatem alias nemo rerum aut ipsum dolorem aliquid pariatur atque minus, dolorum quis inventore quos deserunt dolor corporis sunt iste quo. Neque nulla dolorum quaerat provident praesentium doloremque natus facere optio, maxime architecto minima quia excepturi molestiae non odio tempore temporibus magni? Quam mollitia rem omnis temporibus soluta. Mollitia perferendis, dolorum reiciendis soluta quae id, fugiat impedit culpa error voluptatibus tenetur tempora. Iure totam accusamus obcaecati excepturi nemo id dolor ratione. Porro commodi quo unde amet ab error facilis, suscipit reiciendis consectetur, sequi impedit! Obcaecati, provident ad eum asperiores beatae cum dolores adipisci sint eveniet inventore quam dolorum totam fuga dicta dolore consequuntur enim eos quisquam ab laborum corporis doloribus dolorem? Porro ducimus totam molestias quibusdam dolorum, optio consequatur quaerat magni culpa dolore nihil vitae dolor neque nobis molestiae. Ducimus, fugit. Repellat sed nulla voluptatem necessitatibus consequatur beatae placeat similique, recusandae rem, sequi tempore temporibus ab enim eos obcaecati inventore culpa accusamus omnis, excepturi consectetur ea! Vero ex alias quaerat inventore obcaecati doloribus magni qui temporibus porro nesciunt, iure animi provident odio! Repellendus libero saepe natus, odio quidem cupiditate est magni odit! Tenetur possimus animi iste odio quibusdam ab enim quae fuga iure. Eius voluptatibus repudiandae tenetur, dolorum deserunt blanditiis veritatis reiciendis, temporibus harum obcaecati optio vero distinctio sapiente omnis maiores accusamus beatae.</div>
-    </div>
-  </div>
+</div>
 
 </template>
 
 
 
 <script>
-import SelectablePlan from '@/components/SelectablePlan.vue'
-import PricingTable from '@/components/PricingTable.vue'
+
+import Slider from '@/components/Slider.vue'
+
 
 export default {
   components: {
-    SelectablePlan,
-    PricingTable,
+    Slider
   },
   data() {
     return {
       activePlan: '',
+      auto: true,
+      intervalTime: 5000,
+      slideInterval: 0,
+      slides: document.querySelectorAll('.slide'),
+      next: document.querySelector('#next'),
+      prev: document.querySelector('#prev'),
+      current: document.querySelector('.current'),
     }
   }
-}
-
+} 
 </script>
+
