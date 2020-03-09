@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueFuse from 'vue-fuse'
 import VModal from 'vue-js-modal'
 import ToggleButton from 'vue-js-toggle-button'
-import VueCarousel from 'vue-carousel';
+import VueCarousel from 'vue-carousel'
+import BaiduMap from 'vue-baidu-map'
 
 import App from './App.vue'
 import router from './router'
@@ -13,6 +14,7 @@ import Slider from './components/Slider.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import {faArrowCircleLeft} from '@fortawesome/free-solid-svg-icons'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faArrowCircleRight)
@@ -23,8 +25,11 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(ToggleButton)
 Vue.use(VueFuse)
 Vue.use(VModal)
-Vue.use(Slider)
-Vue.use(VueCarousel);
+Vue.use(Slider) 
+Vue.use(VueCarousel)
+Vue.use(BaiduMap, {
+  ak: 'DD279b2a90afdf0ae7a3796787a0742e'
+})
 
 Vue.config.productionTip = false
 

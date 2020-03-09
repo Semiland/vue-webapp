@@ -5,7 +5,7 @@
     @mouseleave="hideMenu"
   >
     <a
-      href="/#features"
+      href="/home"
       class="text-copy-primary hover:text-gray-600"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
@@ -13,7 +13,7 @@
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      {{ $t('nav.features') }}
+      Home
     </a>
 
     <div class="absolute w-full">&nbsp;</div>
@@ -190,7 +190,14 @@
 </template>
 
 <script>
+
+// import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
+
 export default {
+
+  components: {
+    // LanguageSwitcher
+  },
   mounted() {
     this.menuItems = document.querySelectorAll('.mega-menu a')
   },

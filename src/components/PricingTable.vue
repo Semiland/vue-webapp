@@ -1,9 +1,9 @@
 <template>
   <div>
-    <table class="hidden lg:block w-full text-base">
+    <table class="hidden lg:block w-full text-base ">
       <thead>
         <tr>
-          <th class="w-1/5 bg-gray-100 text-left font-normal align-top px-4 py-6 sticky top-0">
+          <!-- <th class="w-1/5 bg-gray-100 text-left font-normal align-top px-4 py-6 sticky top-0">
             <div class="font-semibold">
               <span class="text-gray-500 mr-3" :class="{ 'text-gray-700': !isMonthly }">Annually</span>
               <toggle-button
@@ -14,196 +14,131 @@
               <span class="text-gray-500 ml-3" :class="{ 'text-gray-700': isMonthly }">Monthly</span>
             </div>
             <div class="text-blue-600 text-sm mt-4">Save up to 30% by paying annually.</div>
-          </th>
+          </th> -->
           <th class="w-1/5 bg-gray-200 text-center border border-gray-400 font-normal px-4 py-6 sticky top-0">
-            <div class="uppercase tracking-wide font-bold text-gray-700">Hobby</div>
+            <div class="uppercase tracking-wide font-bold text-gray-700">Job Title</div>
             <div class="mt-3">
-              <span class="text-lg">$</span>
+              <!-- <span class="text-lg">$</span>
               <span class="font-bold text-4xl ml-1">
                 {{ !isMonthly ? plans.hobby.price.perYear : plans.hobby.price.perMonth }}
               </span>
-              <span class="ml-2 text-sm">/ month</span>
+              <span class="ml-2 text-sm">/ month</span> -->
             </div>
-            <div class="mt-3">
-              <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white inline-block rounded w-4/5 px-4 py-3">Sign Up</a>
-            </div>
-          </th>
-          <th class="w-1/5 bg-gray-200 text-center border border-gray-400 font-normal px-4 py-6 sticky top-0">
-            <div class="uppercase tracking-wide font-bold text-gray-700">Growth</div>
-            <div class="mt-3">
-              <span class="text-lg">$</span>
-              <span class="font-bold text-4xl ml-1">
-                {{ !isMonthly ? plans.growth.price.perYear : plans.growth.price.perMonth }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
-            </div>
-            <div class="mt-3">
-              <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white inline-block rounded w-4/5 px-4 py-3">Sign Up</a>
-            </div>
+            
           </th>
           <th class="w-1/5 bg-gray-200 text-center border border-gray-400 font-normal px-4 py-6 sticky top-0">
             <div class="uppercase tracking-wide font-bold text-gray-700">Business</div>
             <div class="mt-3">
-              <span class="text-lg">$</span>
+              <!-- <span class="text-lg">$</span>
               <span class="font-bold text-4xl ml-1">
-                {{ !isMonthly ? plans.business.price.perYear : plans.business.price.perMonth }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
-            </div>
-            <div class="mt-3">
-              <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white inline-block rounded w-4/5 px-4 py-3">Sign Up</a>
+                {{ !isMonthly ? plans.hobby.price.perYear : plans.hobby.price.perMonth }}
+              </span> -->
+              <span class="ml-2 text-sm">Responsibility</span>
             </div>
           </th>
           <th class="w-1/5 bg-gray-200 text-center border border-gray-400 font-normal px-4 py-6 sticky top-0">
-            <div class="uppercase tracking-wide font-bold text-gray-700">Enterprise</div>
-            <div class="mt-3">
-              <span class="text-lg">$</span>
-              <span class="font-bold text-4xl ml-1">
-                {{ !isMonthly ? plans.enterprise.price.perYear : plans.enterprise.price.perMonth }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
+            <div class="uppercase tracking-wide font-bold text-gray-700">Location</div>
+            <div class="mt-3">              
+              <span class="ml-2 text-sm">Country</span>
             </div>
+          </th>
+          <th class="w-1/5 bg-gray-200 text-center border border-gray-400 font-normal px-4 py-6 sticky top-0">
+            <div class="uppercase tracking-wide font-bold text-gray-700">Site</div>
             <div class="mt-3">
+              <span class="ml-2 text-sm">City</span>
+            </div>            
+          </th>
+          <th class="w-1/5 bg-gray-200 text-center border border-gray-400 font-normal px-4 py-6 sticky top-0">
+            <div class="uppercase tracking-wide font-bold text-gray-700">Type</div>
+            <div class="mt-3">              
+              <span class="ml-2 text-sm">Regular/ Full Time</span>
+            </div>
+            <!-- <div class="mt-3">
               <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white inline-block rounded w-4/5 px-4 py-3">Sign Up</a>
-            </div>
+            </div> -->
           </th>
 
         </tr>
       </thead>
       <tbody>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Shipping Discount</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$19</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$29</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$39</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$49</td>
+        <tr class="bg-gray-200 border border-gray-400">
+          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">R&D Center</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Print Shipping Labels</td>
-          <td class="border border-gray-400 text-center px-4 py-6">3</td>
-          <td class="border border-gray-400 text-center px-4 py-6">4</td>
-          <td class="border border-gray-400 text-center px-4 py-6">5</td>
-          <td class="border border-gray-400 text-center px-4 py-6">6</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Same Day Delivery</td>
-          <td class="border border-gray-400 text-center px-4 py-6">7</td>
-          <td class="border border-gray-400 text-center px-4 py-6">8</td>
-          <td class="border border-gray-400 text-center px-4 py-6">9</td>
-          <td class="border border-gray-400 text-center px-4 py-6">10</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Contributors</td>
-          <td class="border border-gray-400 text-center px-4 py-6">11</td>
-          <td class="border border-gray-400 text-center px-4 py-6">12</td>
-          <td class="border border-gray-400 text-center px-4 py-6">13</td>
-          <td class="border border-gray-400 text-center px-4 py-6">14</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">API Calls</td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">1,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">5,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">10,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td><td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">50,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
+          <!-- <td class="border border-gray-400 text-left px-4 py-6"><a href="">Research Scientist</a></td> -->
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220658PDE`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.careerresearch')}}</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">TECHNICAL R & D GDD</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
         </tr>
         <tr class="bg-gray-200 border border-gray-400">
-          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Shipping</td>
+          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Engineering & Manufacturing</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Free Custom Domain</td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220758PDE`" class="text-copy-primary hover:text-gray-600">Product Design Engineer</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Design Power Modules</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">SSL Security</td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220858PDE`" class="text-copy-primary hover:text-gray-600">Process Development Engineer</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Organizing process</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Regular</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Unlimited Bandwidth and Storage</td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220958PDE`" class="text-copy-primary hover:text-gray-600">Process Sustaining Engineer</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Engineering</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">YanZhong</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">SEO Features for Site Visibility</td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/221058PDE`" class="text-copy-primary hover:text-gray-600">Equipment Engineer</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Equipment and Tech</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
         </tr>
         <tr class="bg-gray-200 border border-gray-400">
-          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Marketing</td>
+          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Sales & Marketing</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Shipping Discount</td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/222058PDE`" class="text-copy-primary hover:text-gray-600">Product Marketing</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Product Saling</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Overseas</td>
+          <td class="border border-gray-400 text-center px-4 py-6">-</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time/Regular</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">Print Shipping Labels</td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
-          </td>
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/223058PDE`" class="text-copy-primary hover:text-gray-600">Sales analyst and support</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Supporting production</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">YanZhong</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/224058PDE`" class="text-copy-primary hover:text-gray-600">Product Sales</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Salesman</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Overseas</td>
+          <td class="border border-gray-400 text-center px-4 py-6">-</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
+        </tr>
+        <tr class="bg-gray-200 border border-gray-400">
+          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Company Services</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-100">
+          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/225058PDE`" class="text-copy-primary hover:text-gray-600">Executive Assistant to the CEO/CTO</router-link></td>
+          <td class="border border-gray-400 text-center px-4 py-6">Executive Assistant</td>
+          <td class="border border-gray-400 text-center px-4 py-6">China</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
+          <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
+        </tr>
+        <!-- With Dots -->
+        <!-- <tr class="odd:bg-white even:bg-gray-100">
           <td class="border border-gray-400 text-left px-4 py-6">Same Day Delivery</td>
           <td class="border border-gray-400 text-center px-4 py-6"></td>
           <td class="border border-gray-400 text-center px-4 py-6"></td>
@@ -222,7 +157,7 @@
           <td class="border border-gray-400 text-center px-4 py-6">
             <svg class="w-6 h-6 inline-block text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z" /></svg>
           </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
 

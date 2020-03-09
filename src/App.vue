@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="font-sans text-gray-800">
-    <header class="border-t-4 border-blue-700 bg-white z-10 absolute w-full shadow-md">
+    <header class="border-t-4 border-blue-100 bg-white z-10 absolute w-full shadow-md">
       <nav class="container mx-auto px-2 flex flex-wrap justify-between items-center py-1">
         <div class="mb-0 lg:mb-6 xl:mb-0 pt-0"> 
           <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
@@ -17,13 +17,14 @@
           class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="menuOpen ? 'block': 'hidden'"
         >
-          <li class="mr-12 mb-6 lg:mb-0 pt-10">
-            <!-- <search-component /> -->
-          </li>
-          <!-- <li class="mr-8 mb-6 lg:mb-0">
-            <mega-menu />
+          <!-- <li class="mr-12 mb-6 lg:mb-0 pt-10">
+            <search-component />
           </li> -->
           <li class="mr-8 mb-6 lg:mb-0">
+            <!-- <mega-menu /> -->
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <!-- <mega-menu /> -->
             <router-link :to="`/${$i18n.locale}/home`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.home')}}</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
@@ -68,6 +69,7 @@ import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 // import MegaMenu from '@/components/MegaMenu.vue'
 import ModalLogin from '@/components/ModalLogin.vue'
 import ModalRegister from '@/components/ModalRegister.vue'
+
 
 export default {
   name: 'app',

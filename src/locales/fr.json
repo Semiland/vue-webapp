@@ -5,10 +5,12 @@
     "services": "frServices",
     "career": "frCareer",
     "contact": "frContact",
-    "blog": "frBlog"
+    "blog": "frBlog",
+    "careerresearch": "Research Scientist"
+    
   },
   "about": {
     "title": "frAbout",
-    "content": "frLorem ipsum dolor sit amet <a href='#' class='text-blue-500'>consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint."
+    "content": "We offer a diverse, flexible and highly supportive working environment that allows you to explore your interests and promotes professional integrity, innovation and teamwork. Please email your latest CV to us:  <a href='#' class='text-blue-500'>career@semiland.com</a> ."
+    }
   }
-}
