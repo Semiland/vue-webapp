@@ -3,7 +3,7 @@
     <div class="line"></div>
       <div class="text-2xl mb-4 md:mb-12 font-bold flex justify-center items-center our-loc">OUR LOCATION</div>
     
-    <BaiduMap/>
+    <!-- <BaiduMap/> -->
 
       <div class="container mx-auto px-9 lg:px-69 cont-contf">
 
