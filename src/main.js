@@ -16,6 +16,7 @@ import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import {faArrowCircleLeft} from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import VueRouter from '../node_modules/vue-router';
 
 library.add(faArrowCircleRight)
 library.add(faArrowCircleLeft)
@@ -52,3 +53,9 @@ new Vue({
   i18n,
   render: h => h(App)
 }).$mount('#app')
+
+// const router = new VueRouter({
+//   routes: routes,
+//   model: 'history',
+
+// })

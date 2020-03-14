@@ -1,32 +1,37 @@
 <template>
-<div>
+<div> 
     <div class="border-box-semi">
       <div class="slider-wrapper">
         <div class="slider">
       <div class="slide current">
         <div class="content">
-          <h1>Slide One</h1>
+          <h1>Semiland</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
+            Power the World with our technology!
           </p>
         </div>
       </div>
       <div class="slide">
         <div class="content">
-          <h1>Slide Two</h1>
+          <h1></h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
+            Semiland is headquarted in Yangzhong, China.
           </p>
         </div>
       </div>
       <div class="slide">
         <div class="content">
-          <h1>Slide Three</h1>
+          <h1></h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-            maxime, voluptatibus labore doloremque vero!
+            Semiland R&D center is located in Jubao park.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1></h1>
+          <p>
+            Semiland, expert in making advanced WBG power modules!
           </p>
         </div>
       </div>
@@ -42,13 +47,13 @@
     </div>
 
     
-
+ 
     
 </template>
 
 <script>
 // import SelectablePlan from '@/components/SelectablePlan.vue'
-import { clearInterval, setInterval } from 'timers';
+
 
 export default {
 
@@ -64,7 +69,13 @@ export default {
       sliderInterval: 0,
       auto: true,
       counter: 0,
-    
+    }
+  },
+
+  props: {
+    interval: {
+      type: Number,
+      default: 0
     }
   },
 
@@ -81,9 +92,8 @@ export default {
         selcOneItm: document.querySelectorAll('.slide')
     }
       return slidrQuerySlide
-  },
+  }      
   }, 
-
 
   methods:{
    
@@ -99,6 +109,7 @@ export default {
       }else{
         selcOneItm[0].classList.add('current')
       }
+      // setTimeout(() => current.classList.remove('current'));
     },
 
     prevSld(){
@@ -111,23 +122,32 @@ export default {
       }else{
         selcOneItm[selcOneItm.length-1].classList.add('current')
       }
+      // setTimeout(() => current.classList.remove('current'));
     },
 
     btnClickSlidNx(){
       this.nextSld()
-      clearInterval(this.slideInterval);
-      this.slideInterval = setInterval(this.nextSlide, this.intervalTime);
+      
+      // clearInterval(this.sliderInterval)
+      // this.sliderInterval = setInterval(this.nextSld, this.intervalTime)
+    
   
     },
 
     btnClickSlidPrev(){
       this.prevSld()
-      clearInterval(this.slideInterval);
-      this.slideInterval = setInterval(this.nextSlide, this.intervalTime);
+      // clearInterval(this.sliderInterval)
+      // this.sliderInterval = setInterval(this.nextSld, this.intervalTime)
     },
-
-
-  }
+  },
+  //  mounted() {
+  //    let vs = this
+  //     if(vs.auto){
+  //       vs.sliderInterval = setInterval(function (){
+  //         vs.btnClickSlidNx()
+  //       }, vs.intervalTime)
+  //     }
+  //   },
 }
 </script>
 

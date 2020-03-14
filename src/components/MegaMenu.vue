@@ -13,8 +13,10 @@
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      Home
+      <router-link :to="`/${$i18n.locale}/home`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.home')}}</router-link>
     </a>
+
+    
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">

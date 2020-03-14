@@ -2,8 +2,8 @@
   <div id="contact-form">
     <div class="line"></div>
       <div class="text-2xl mb-4 md:mb-12 font-bold flex justify-center items-center our-loc">OUR LOCATION</div>
-    
-    <!-- <BaiduMap/> -->
+     
+    <BaiduMap/> 
 
       <div class="container mx-auto px-9 lg:px-69 cont-contf">
 
@@ -11,14 +11,14 @@
       </div>
        --> 
        <div class="line"></div>
-      <div class="text-2xl mb-4 md:mb-12 font-bold flex justify-center items-center">CONTACT US</div>
+      <!-- <div class="text-2xl mb-4 md:mb-12 font-bold flex justify-center items-center">CONTACT US</div> -->
         <div class="container ctr-blox">
           <div class="row-grd">
             
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="contact-box left mb-65">
+                  <!-- <div class="contact-box left mb-65">
                     <div class="contact-icon-left">
                       <img src="/map-marked-alt-solid.svg" alt="english flag" class="h-8 w-8">
                     </div>
@@ -30,9 +30,9 @@
                       </a>
                       
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="contact-box left mb-65">
+                  <!-- <div class="contact-box left mb-65">
                     <div class="contact-icon-left">
                       <img src="/map-marked-alt-solid.svg" alt="english flag" class="h-8 w-8">
                     </div>
@@ -44,14 +44,14 @@
                       </a>
                       
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
 
-            <div class="col-md-8">
+            <!-- <div class="col-md-8">
               <div class="contact_frm">
-                <!-- <div id="message"></div> -->
+                <div id="message"></div>
                 <form action="contact.php" name="contactform" id="contactform" method="post">
                   <div class="col-sm-12">
                     <div class="form-groups">
@@ -80,7 +80,7 @@
                   </div>
                 </form>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

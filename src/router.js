@@ -5,6 +5,7 @@ import i18n from './i18n'
 
 Vue.use(Router)
 
+
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -96,7 +97,68 @@ export default new Router({
           name: '225058PDE',
           component: () => import(/* webpackChunkName: "contact" */ './views/ExecAssistCEOCTO.vue')
         }, 
+
+        // Blog
+        {
+          path: '324656-bl-1',
+          name: '324656-bl-1',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog1.vue')
+        }, 
+        {
+          path: '324656-bl-2',
+          name: '324656-bl-2',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog2.vue')
+        },
+        {
+          path: '324656-bl-3',
+          name: '324656-bl-3',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog3.vue')
+        },
+        {
+          path: '324656-bl-4',
+          name: '324656-bl-4',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog4.vue')
+        },
+        {
+          path: '324656-bl-5',
+          name: '324656-bl-5',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog5.vue')
+        },
+        {
+          path: '324656-bl-6',
+          name: '324656-bl-6',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog6.vue')
+        },
+        {
+          path: '324656-bl-7',
+          name: '324656-bl-7',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Blog7.vue')
+        },
       ]
+    } 
+  ],
+
+  data() {
+    return{
+
     }
-  ]
+  },
+
+  scrollBehavior(to, from, savedPosition){
+    if(to.hash){
+      return {
+        selector: to.hash
+      };
+    }
+
+    if(savedPosition){
+      return savedPosition;
+    }
+    return {x:0, y:0};
+  },
+
+  methods: {
+    
+  }
+
 })

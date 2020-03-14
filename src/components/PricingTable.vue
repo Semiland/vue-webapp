@@ -2,13 +2,13 @@
   <div>
     <table class="hidden lg:block w-full text-base ">
       <thead>
-        <tr>
+        <tr id="r-d-center-slider">
           <!-- <th class="w-1/5 bg-gray-100 text-left font-normal align-top px-4 py-6 sticky top-0">
             <div class="font-semibold">
               <span class="text-gray-500 mr-3" :class="{ 'text-gray-700': !isMonthly }">Annually</span>
               <toggle-button
                 v-model="isMonthly"
-                switch-color="#4199E1"
+                switch-color="#4199E1" 
                 :color="{checked: '#CBD5E0', unchecked: '#CBD5E0'}"
               />
               <span class="text-gray-500 ml-3" :class="{ 'text-gray-700': isMonthly }">Monthly</span>
@@ -66,7 +66,7 @@
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
           <!-- <td class="border border-gray-400 text-left px-4 py-6"><a href="">Research Scientist</a></td> -->
-          <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220658PDE`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.careerresearch')}}</router-link></td>
+          <td id="engineering-and-mannufacturing-slider" class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220658PDE`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.careerresearch')}}</router-link></td>
           <td class="border border-gray-400 text-center px-4 py-6">TECHNICAL R & D GDD</td>
           <td class="border border-gray-400 text-center px-4 py-6">China</td>
           <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
@@ -89,7 +89,7 @@
           <td class="border border-gray-400 text-center px-4 py-6">Nanjing</td>
           <td class="border border-gray-400 text-center px-4 py-6">Regular</td>
         </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
+        <tr  id="sales-and-marketing-slider" class="odd:bg-white even:bg-gray-100">
           <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/220958PDE`" class="text-copy-primary hover:text-gray-600">Process Sustaining Engineer</router-link></td>
           <td class="border border-gray-400 text-center px-4 py-6">Engineering</td>
           <td class="border border-gray-400 text-center px-4 py-6">China</td>
@@ -120,7 +120,7 @@
           <td class="border border-gray-400 text-center px-4 py-6">YanZhong</td>
           <td class="border border-gray-400 text-center px-4 py-6">Full Time</td>
         </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
+        <tr id="company-services-slider" class="odd:bg-white even:bg-gray-100">
           <td class="border border-gray-400 text-left px-4 py-6"><router-link :to="`/${$i18n.locale}/224058PDE`" class="text-copy-primary hover:text-gray-600">Product Sales</router-link></td>
           <td class="border border-gray-400 text-center px-4 py-6">Salesman</td>
           <td class="border border-gray-400 text-center px-4 py-6">Overseas</td>

@@ -7,46 +7,47 @@
            <ul class="foter-lef">
              <li class="li-home">
                <p class="p-hom">
-                 <a href="#">HOME</a>
+                 <router-link :to="`/${$i18n.locale}/home`" class="text-copy-primary hover:text-gray-600">HOME</router-link>
                </p>
-               <a href="#">Culture</a>
-               <a href="#">Entertainment</a>
+               <router-link :to="`/${$i18n.locale}/home#semiland-main-services-slider`" class="text-copy-primary hover:text-gray-600">Main Business</router-link>
+               <router-link :to="`/${$i18n.locale}/home#semiland-entertainment-slider`" class="text-copy-primary hover:text-gray-600">Entertainment</router-link>
+               
              </li>
 
              <li class="li-home">
                <p class="p-hom">
-                 <a href="#">NEWS</a>
+                 <router-link :to="`/${$i18n.locale}/blog`" class="text-copy-primary hover:text-gray-600">NEWS</router-link>
                </p>
-               <a href="#">Culture</a>
-               <a href="#">Entertainment</a>
-               <a href="">Some</a>
+               <router-link :to="`/${$i18n.locale}/324656-bl-1`" class="text-copy-primary hover:text-gray-600">Latest</router-link>
+               <router-link :to="`/${$i18n.locale}/324656-bl-5`" class="text-copy-primary hover:text-gray-600">Technology</router-link>
+               <router-link :to="`/${$i18n.locale}/324656-bl-6`" class="text-copy-primary hover:text-gray-600">PM</router-link>
              </li>
 
              <li class="li-home">
                <p class="p-hom">
-                 <a href="#">PRODUCT</a>
+                 <router-link :to="`/${$i18n.locale}/services`" class="text-copy-primary hover:text-gray-600">SERVICES</router-link>
                </p>
-               <a href="#">EV/AVE</a>
-               <a href="#">Module</a>
-               <a href="">Power</a>
+               <router-link :to="`/${$i18n.locale}/services`" class="text-copy-primary hover:text-gray-600">Power Modules</router-link>
+               <router-link :to="`/${$i18n.locale}/services#customized-products-slider`" class="text-copy-primary hover:text-gray-600">Customized</router-link>
+               <router-link :to="`/${$i18n.locale}/services#testing-and-calibration-slider`" class="text-copy-primary hover:text-gray-600">Testing</router-link>
+                <router-link :to="`/${$i18n.locale}/services#simulation-and-modeling-slider`" class="text-copy-primary hover:text-gray-600">Simulation</router-link>
              </li>
 
              <li class="li-home">
                <p class="p-hom">
-                 <a href="#">APPLICATION</a>
+                  <router-link :to="`/${$i18n.locale}/career`" class="text-copy-primary hover:text-gray-600">CAREER</router-link>
                </p>
-               <a href="#">Heat</a>
-               <a href="#">Solid</a>
-               <a href="">Model</a>
+               <router-link :to="`/${$i18n.locale}/career#r-d-center-slider`" class="text-copy-primary hover:text-gray-600">R&D Center</router-link>
+               <router-link :to="`/${$i18n.locale}/career#engineering-and-mannufacturing-slider`" class="text-copy-primary hover:text-gray-600">Engineering</router-link>
+               <router-link :to="`/${$i18n.locale}/career#sales-and-marketing-slider`" class="text-copy-primary hover:text-gray-600">Marketing</router-link>
+               <router-link :to="`/${$i18n.locale}/career#company-services-slider`" class="text-copy-primary hover:text-gray-600">Company Serv</router-link>
              </li>
 
              <li class="li-home">
                <p class="p-hom">
-                 <a href="#">CONTACT</a>
+                 <router-link :to="`/${$i18n.locale}/contact`" class="text-copy-primary hover:text-gray-600">CONTACT</router-link>
                </p>
-               <a href="#">Contact US</a>
-               <a href="#">Career</a>
-               <a href="">Journal</a>
+                <router-link :to="`/${$i18n.locale}/contact`" class="text-copy-primary hover:text-gray-600">Location</router-link>
              </li>
            </ul>
            <div class="foter-righ">

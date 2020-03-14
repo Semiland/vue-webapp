@@ -29,6 +29,7 @@
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <router-link :to="`/${$i18n.locale}/services`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.services') }}</router-link>
+            <!-- <ServicesMenu/> -->
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <router-link :to="`/${$i18n.locale}/career`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.career') }}</router-link>
@@ -40,18 +41,18 @@
             <router-link :to="`/${$i18n.locale}/blog`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.blog') }}</router-link>
           </li>
           
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <modal-login />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <modal-register />
-          </li>
+          </li> -->
           <li class="mb-4 lg:mb-0 lg:mr-8">
-            <language-switcher />
+            <!-- <language-switcher /> -->
           </li>
-          <li>
+          <!-- <li>
             <dropdown-menu />
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -64,36 +65,100 @@
 
 <script>
 // import SearchComponent from '@/components/SearchComponent.vue'
-import DropdownMenu from '@/components/DropdownMenu.vue'
-import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
+// import DropdownMenu from '@/components/DropdownMenu.vue'
+// import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 // import MegaMenu from '@/components/MegaMenu.vue'
-import ModalLogin from '@/components/ModalLogin.vue'
-import ModalRegister from '@/components/ModalRegister.vue'
+// import ServicesMenu from '@/components/ServicesMenu.vue'
+// import ModalLogin from '@/components/ModalLogin.vue'
+// import ModalRegister from '@/components/ModalRegister.vue'
 
 
 export default {
   name: 'app',
   components: {
     // SearchComponent,
-    DropdownMenu,
+    // DropdownMenu,
     // MegaMenu,
-    ModalLogin,
-    ModalRegister,
-    LanguageSwitcher
+    // ModalLogin,
+    // ModalRegister,
+    // LanguageSwitcher,
+    // ServicesMenu
   },
   data() {
     return {
       menuOpen: false,
+      // activePlan: '',
+      // current: document.querySelector('.current'),
+      // sliderInterval: 0,
+      // autoScrollings: true,
+      // counter: 0,
     }
   },
   methods: {
     toggleMenu() {
       this.menuOpen = !this.menuOpen
-    }
-  }
+    },
+    // nextSld(){
+    // //  const current = this.slidrQuerySel.selcOneCurr
+    //   const current = document.querySelector('.current')
+    //   // const current = this.current
+    //   const selcOneItm = this.slidrQuerySlide.selcOneItm
+    //   // const selcOneItm = this.slides
+      
+    //   current.classList.remove('current')
+
+    //   if(current.nextElementSibling){
+    //     current.nextElementSibling.classList.add('current')
+        
+    //   }else{
+    //     selcOneItm[0].classList.add('current')
+    //   }
+    //   // setTimeout(() => current.classList.remove('current'));
+    // },
+
+    // prevSld(){
+    //   const current = document.querySelector('.current')
+    //   // const current = this.slidrQuerySel.selcOneCurr
+    //   // const current = this.current
+    //   const selcOneItm = this.slidrQuerySlide.selcOneItm
+    //   // const selcOneItm = this.slides
+    //   current.classList.remove('current')
+
+    //   if(current.previousElementSibling){
+    //     current.previousElementSibling.classList.add('current')
+    //   }else{
+    //     selcOneItm[selcOneItm.length-1].classList.add('current')
+    //   }
+    //   // setTimeout(() => current.classList.remove('current'));
+    // },
+
+    // btnClickSlidNx(){
+    //   this.nextSld()
+      
+    //   clearInterval(this.slrdInterval.sliderInterval)
+    //   this.slrdInterval.sliderInterval = setInterval(this.nextSld, this.intrTime.intervalTime)
+    
+  
+    // },
+
+    // btnClickSlidPrev(){
+    //   this.prevSld()
+    //   clearInterval(this.slrdInterval.sliderInterval)
+    //   this.slrdInterval.sliderInterval = setInterval(this.nextSld, this.intrTime.intervalTime)
+    // },
+    
+  },
+  // mounted() {
+  //    let vs = this
+  //     if(vs.autoScrollings){
+  //       vs.slrdInterval.sliderInterval = setInterval(() =>{
+  //         vs.btnClickSlidNx()
+  //       }, vs.intrTime.intervalTime)
+  //     }
+  //   },
 }
 </script>
 
 <style src="@/assets/css/tailwind.css" />
-
+<link href="https://fonts.googleapis.com/css?family=Exo+2&amp;display=swap" rel="stylesheet">
  
