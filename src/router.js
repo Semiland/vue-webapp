@@ -97,6 +97,28 @@ export default new Router({
           name: '225058PDE',
           component: () => import(/* webpackChunkName: "contact" */ './views/ExecAssistCEOCTO.vue')
         }, 
+				
+				/* Companies Positions */
+        {
+          path: 'r-d-center',
+          name: 'r-d-center',
+          component: () => import(/* webpackChunkName: "contact" */ './views/RandDCenter.vue')
+        },
+				{
+          path: 'eng-manu',
+          name: 'eng-manu',
+          component: () => import(/* webpackChunkName: "contact" */ './views/EngineeringandManufacturing.vue')
+        },
+				{
+          path: 'sales-market',
+          name: 'sales-market',
+          component: () => import(/* webpackChunkName: "contact" */ './views/SalesAndMarketing.vue')
+        },
+				{
+          path: 'company-services',
+          name: 'company-services',
+          component: () => import(/* webpackChunkName: "contact" */ './views/CompanyServices.vue')
+        },
 
         // Blog
         {
@@ -133,6 +155,23 @@ export default new Router({
           path: '324656-bl-7',
           name: '324656-bl-7',
           component: () => import(/* webpackChunkName: "contact" */ './views/Blog7.vue')
+        },
+				
+				// Application Area 
+				{
+          path: 'renev',
+          name: 'renev',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Renevables.vue')
+        },
+				{
+          path: 'ev-hve',
+          name: 'ev-hve',
+          component: () => import(/* webpackChunkName: "contact" */ './views/EVHVE.vue')
+        },
+				{
+          path: 'industr',
+          name: 'industr',
+          component: () => import(/* webpackChunkName: "contact" */ './views/Industrial.vue')
         },
       ]
     } 

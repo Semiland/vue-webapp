@@ -20,19 +20,32 @@
           <!-- <li class="mr-12 mb-6 lg:mb-0 pt-10">
             <search-component />
           </li> -->
+<!--
           <li class="mr-8 mb-6 lg:mb-0">
-            <!-- <mega-menu /> -->
+             <mega-menu /> 
           </li>
+-->
+<!--
           <li class="mr-8 mb-6 lg:mb-0">
-            <!-- <mega-menu /> -->
+             <mega-menu /> 
             <router-link :to="`/${$i18n.locale}/home`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.home')}}</router-link>
           </li>
+-->
+					<li class="mr-8 mb-6 lg:mb-0">
+             <MegaMenuHome/> 
+          </li>
+					
           <li class="mr-8 mb-6 lg:mb-0">
             <router-link :to="`/${$i18n.locale}/services`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.services') }}</router-link>
             <!-- <ServicesMenu/> -->
           </li>
+<!--
           <li class="mr-8 mb-6 lg:mb-0">
             <router-link :to="`/${$i18n.locale}/career`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.career') }}</router-link>
+          </li>
+-->
+					<li class="mr-8 mb-6 lg:mb-0">
+             <MegaMenuCareer/> 
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <router-link :to="`/${$i18n.locale}/contact`" class="text-copy-primary hover:text-gray-600">{{ $t('nav.contact') }}</router-link>
@@ -43,16 +56,18 @@
           
           <!-- <li class="mr-8 mb-6 lg:mb-0">
             <modal-login />
-          </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          </li> -->
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <modal-register />
           </li> -->
           <li class="mb-4 lg:mb-0 lg:mr-8">
-            <!-- <language-switcher /> -->
+            <language-switcher />
           </li>
-          <!-- <li>
+<!--
+           <li>
             <dropdown-menu />
-          </li> -->
+           </li> 
+-->
         </ul>
       </nav>
     </header>
@@ -66,8 +81,10 @@
 <script>
 // import SearchComponent from '@/components/SearchComponent.vue'
 // import DropdownMenu from '@/components/DropdownMenu.vue'
-// import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
-// import MegaMenu from '@/components/MegaMenu.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
+//import MegaMenu from '@/components/MegaMenu.vue'
+import MegaMenuCareer from '@/components/MegaMenuCareer.vue'
+import MegaMenuHome from '@/components/MegaMenuHome.vue'
 // import ServicesMenu from '@/components/ServicesMenu.vue'
 // import ModalLogin from '@/components/ModalLogin.vue'
 // import ModalRegister from '@/components/ModalRegister.vue'
@@ -77,12 +94,14 @@ export default {
   name: 'app',
   components: {
     // SearchComponent,
-    // DropdownMenu,
-    // MegaMenu,
+//     DropdownMenu,
+//     MegaMenu,
     // ModalLogin,
     // ModalRegister,
-    // LanguageSwitcher,
+    LanguageSwitcher,
     // ServicesMenu
+		MegaMenuCareer,
+		MegaMenuHome
   },
   data() {
     return {

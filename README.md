@@ -40,3 +40,13 @@ git push heroku master
 
 npm run serve
 
+
+### Github Pages
+git init
+git commit -m "first commit"
+git remote add origin https://github.com/Semiland/vue-webapp.git
+git push -u origin master
+
+git init
+git commit -m "first commit"
+git push -u origin master

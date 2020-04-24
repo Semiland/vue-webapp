@@ -15,7 +15,7 @@
         </div>
         <div>
             <div class="job-details-top-cont">
-                <a href="#" target="_blank" class="appl">Apply</a>
+                <ApplyJob/>
             </div>    
         </div>
 
@@ -58,10 +58,12 @@
 <script>
 
 import Footer from '@/components/Footer.vue'
+import ApplyJob from '@/components/ApplyJob.vue'
 
 export default {
   components: {
-    Footer
+    Footer,
+    ApplyJob
   }
 }
 </script>
